@@ -10,7 +10,7 @@ Acest proiect a fost facut de fun, nu pentru un motiv real!
 Enjoy
 
 # scrie
-scrie 1
+'''scrie 1'''
 output: 1
 
 scrie "Salut\n"
