@@ -1,6 +1,11 @@
 # pseudocod
 
 Compileaza cu g++ main.cpp -o main
+!!! SE RULEAZA PROGRAMUL CU PARAMETRU:
+```./main [fisier text]``` pe linux
+```/main [fisier text]``` pe windows
+
+!!! RULAREA PROGRAMULUI FARA PARAMETRU FISIER TEXT VA ACTIVA OPTIUNEA EVALUATOR. IN ACEST MOD NU PUTETI RULA COD PSEUDOCOD! (deocamdata nu e terminata partea asta)
 
 # atentie
 Acest interpret a fost scris cu o metoda mai neortodoxa. Manipularea erorilor este
