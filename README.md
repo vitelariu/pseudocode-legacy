@@ -24,7 +24,8 @@ output: 1
 
 # citeste
 ```citeste x
-scrie x```
+scrie x
+```
 output: x (va fi un numar)
 
 citeste y (text)
