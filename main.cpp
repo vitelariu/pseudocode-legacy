@@ -65,7 +65,7 @@ bool is_num_conv = false, is_text_conv = false;
 
 
 
-std::string get_ints(std::string n) {
+std::string get_ints(std::string n) { // more like get_variables
 	if(n.find(":") != std::string::npos) {
 		for(int i{}; i < n.find(":"); i++) {
 			conversion += n[i];
