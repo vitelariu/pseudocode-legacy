@@ -4,7 +4,7 @@ Compileaza cu g++ main.cpp -o main
 
 # atentie
 Acest interpret a fost scris cu o metoda mai neortodoxa. Manipularea erorilor este
-minima, deci cand se scrie pseudocod mare atentie la sintaza. !!! Sintaxa gresita
+minima, deci cand se scrie pseudocod mare atentie la sintaxa. !!! Sintaxa gresita
 poate duce la segmentation fault / rezultate nedorite !!!
 Acest proiect a fost facut de fun, nu pentru un motiv real!
 Enjoy
