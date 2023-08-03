@@ -104,17 +104,17 @@ scrie 1 // program
 array[10] <- 0
 scrie array[1] + 69
 
-array\[3] <- 0, 1, 2
-scrie array\[0]
+array[3] <- 0, 1, 2
+scrie array[0]
 ```
 ```
 text <- "Hello World"
-scrie text\[0]
+scrie text[0]
 ```
 // !!! atentie
 ```
 text <- "\n"
-scrie text\[0]
+scrie text[0]
 // eroare
 ```
 # conversie
@@ -157,35 +157,37 @@ cat timp c <= n executa
 program <- "+++++++\[>++++++++++<-]>++.>++++++++++\[>++++++++++<-]>+.>++++++++++\[>+++++++++++<-]>--..>++++++++++\[>+++++++++++<-]>+.>++++++++++\[>+++<-]>++.>++++++++++\[>+++++++++<-]>---.>++++++++++\[>+++++++++++<-]>+.>++++++++++\[>+++++++++++<-]>++++.>++++++++++\[>+++++++++++<-]>--.>++++++++++\[>++++++++++<-]>."
 program <- program + ";"
 
-array\[20000] <- 0
+array[2000] <- 0
 p <- 50
 i <- 0
 
 
-cat timp program\[i] != ";" executa
-	daca program\[i] = "+" atunci
-		array\[p] <- array\[p] + 1
-	daca program\[i] = "-" atunci
-		array\[p] <- array\[p] - 1
-	daca program\[i] = ">" atunci
+cat timp program[i] != ";" executa
+	daca program[i] = "+" atunci
+		array[p] <- array[p] + 1
+	daca program[i] = "-" atunci
+		array[p] <- array[p] - 1
+	daca program[i] = ">" atunci
 		p <- p + 1
-	daca program\[i] = "<" atunci
+	daca program[i] = "<" atunci
 		p <- p - 1
-	daca program\[i] = "]" atunci
-		daca array\[p] != 0 atunci
+	daca program[i] = "]" atunci
+		daca array[p] != 0 atunci
 			pair <- 1
 			cat timp pair != 0 executa
 				i <- i - 1
-				daca program\[i] = "\[" atunci
+				daca program[i] = "[" atunci
 					pair <- pair - 1
-				daca program\[i] = "]" atunci
+				daca program[i] = "]" atunci
 					pair <- pair + 1
-	daca program\[i] = "," atunci
+
+
+	daca program[i] = "," atunci
 		citeste x
-		array\[p] <- x
-	daca program\[i] = "." atunci
-		scrie text: array\[p]
+		array[p] <- x
+	daca program[i] = "." atunci
+		scrie text: array[p]
 
+
+	i <- i + 1
 ```
-
-
