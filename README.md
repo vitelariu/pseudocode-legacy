@@ -23,7 +23,8 @@ output: String altceva2
 output: 1
 
 # citeste
-```citeste x
+```
+citeste x
 scrie x
 ```
 output: x (va fi un numar)
