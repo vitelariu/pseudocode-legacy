@@ -16,7 +16,7 @@ output: 1
 ```scrie "Salut\n"```
 output: Salut
 
-```scrie "String", " ", "altceva" + 2```
+```scrie "String", " ", "altceva" + "2"```
 output: String altceva2
 
 ```scrie !(1 = 10 - 9) sau (100 > 69 si 30 < 60)```
