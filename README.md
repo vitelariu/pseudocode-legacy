@@ -88,8 +88,8 @@ pentru i <- 100, 0, -1 executa
 # comentarii
 // Comentariile se pun pe linie separata cu incepand cu "//"
 Corect:
-// Program
 ```
+// Program
 scrie 1
 ```
 
