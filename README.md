@@ -24,100 +24,117 @@ output: 1
 
 # citeste
 ```
-citeste x
+citeste x (numar natural)
 scrie x
 ```
 output: x (va fi un numar)
 
+```
 citeste y (text)
 scrie y
+```
 output: y (va fi text)
-
+```
 citeste x, y, z (numere naturale)
 scrie x + y + z
+```
 output: x + y + z
 
 # asignare
+```
 x <- 0
 y <- "Hello"
 z <- "Hello " + "World"
+```
 
 # daca
+```
 daca 1 + 1 = 2 atunci
   scrie "Adevarat\n"
-
+```
+```
 citeste a
 daca a = "a" atunci
   scrie "Adevarat\n"
 altfel
   scrue "Fals\n"
-
+```
 
 # cat timp
+```
 i <- 0
 cat timp i <= 100 executa
   scrie i, " "
   i <- i + 1
-
+```
 
 # executa
+```
 i <- 0
 executa
   scrie i, " "
   i <- i + 1
 pana cand i <= 100
-
+```
 # pentru
+```
 pentru i <- 0, 10 executa
   scrie i, " "
-
+```
+```
 pentru i <- 100, 0, -1 executa
   scrie i, " "
-
+```
 # comentarii
 // Comentariile se pun pe linie separata cu incepand cu "//"
 Corect:
 // Program
+```
 scrie 1
+```
 
 Gresit:
+```
 scrie 1 // program
+```
 
 # arrays
 // Initializeaza un array cu 10 elemente
+```
 array\[10] <- 0
 scrie array\[1] + 69
 
 array\[3] <- 0, 1, 2
 scrie array\[0]
-
-
+```
+```
 text <- "Hello World"
 scrie text\[0]
-
+```
 // !!! atentie
+```
 text <- "\n"
 scrie text\[0]
 // eroare
-
+```
 # conversie
-
+```
 citeste x (text)
 // sa zicem ca citeste un caracter "a"
 scrie numar: x
-
-
+```
+```
 citeste y (numar natural)
 scrie text: y
-
+```
 
 // Conversia se foloseste doar in statement-urile scrie si asigneaza. Nu se foloseste pe un numar in parte
 
 
 
 # exemple de cod
-# fibonacci
-
+## fibonacci
+```
 // Fibonacci
 
 citeste n
@@ -131,10 +148,10 @@ cat timp c <= n executa
 	c <- a + b
 	a <- b
 	b <- c
+```
 
-
-# brainfuck interpreter
-
+## brainfuck interpreter
+```
 //citeste program (text)
 program <- "+++++++\[>++++++++++<-]>++.>++++++++++\[>++++++++++<-]>+.>++++++++++\[>+++++++++++<-]>--..>++++++++++\[>+++++++++++<-]>+.>++++++++++\[>+++<-]>++.>++++++++++\[>+++++++++<-]>---.>++++++++++\[>+++++++++++<-]>+.>++++++++++\[>+++++++++++<-]>++++.>++++++++++\[>+++++++++++<-]>--.>++++++++++\[>++++++++++<-]>."
 program <- program + ";"
@@ -168,6 +185,6 @@ cat timp program\[i] != ";" executa
 	daca program\[i] = "." atunci
 		scrie text: array\[p]
 
-
+```
 
 
