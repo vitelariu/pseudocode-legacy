@@ -57,7 +57,7 @@ citeste a
 daca a = "a" atunci
   scrie "Adevarat\n"
 altfel
-  scrue "Fals\n"
+  scrie "Fals\n"
 ```
 
 # cat timp
