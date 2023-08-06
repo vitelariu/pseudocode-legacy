@@ -11,28 +11,6 @@
 #define MULTIPLY_DIVIDE_MODULO 4
 #define POWER 5
 
-bool check_paranth(std::string n) {
-	if(n[n.length() - 1] != ')' and (n[n.length() - 1] < '0' or n[n.length() - 1] > '9')) {
-		return 0;
-	}
-	int paranth{};
-
-	for(int i{}; i < n.length(); i++) {
-		if(n[i] == '(') {
-			paranth++;
-		}
-		else if(n[i] == ')') {
-			paranth--;
-			if(i == 0) return 0;
-			if(n[i-1] == '(') return 0;
-		}
-
-		if(paranth < 0) return 0;
-	}
-
-	return paranth == 0;
-} 
-
 
 
 std::string cut(std::string n) {
