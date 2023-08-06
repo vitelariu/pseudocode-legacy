@@ -161,7 +161,7 @@ long long evaluate(std::string n) {
 			}
 		}
 		if(current_op.length() == 0) {
-			if(n[i] == '!') {
+			if(n[i] == '!' and n[i+1] == '=') {
 				current_op += "!=";
 				current_op_num = EGSD;
 				i++;
@@ -175,8 +175,7 @@ long long evaluate(std::string n) {
 				if(n[i] == '>') current_op += '>';
 				else current_op += '<';
 				if(i + 1 < n.length() - 1) {
-					if(n[i + 1] == '=') current_op += '=';
-					i++;
+					if(n[i + 1] == '=') {current_op += '='; i++;}
 				}
 			}
 			else{
