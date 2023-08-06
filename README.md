@@ -117,6 +117,7 @@ scrie 1 // program
 array[10] <- 0
 scrie array[1] + 69
 ```
+Alt exemplu:
 ```
 array[3] <- 0, 1, 2
 scrie array[0]
